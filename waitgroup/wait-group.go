@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+//Sincronismo de goroutines (não é tão utilizado)
 func main() {
 	var waitGroup sync.WaitGroup
 
@@ -21,7 +22,7 @@ func main() {
 		waitGroup.Done() //-1
 	}()
 
-	waitGroup.Wait()
+	waitGroup.Wait() //0
 
 }
 
