@@ -12,7 +12,7 @@ func main() {
 	go escrever("Olá mundo", chanel)
 
 	fmt.Println("Iniciando programa!")
-	for message := range chanel {
+	for message := range chanel { //Fica verificando se o canal está aberto, quando fechado o mesmo vai finalizar o processo do for
 		fmt.Println(message)
 	}
 	fmt.Println("Finalizando programa!")
