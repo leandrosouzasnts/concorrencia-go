@@ -15,7 +15,7 @@ func main() {
 	}
 }
 
-func escrever(texto string) <-chan string {
+func escrever(texto string) <-chan string { //Generator é usado para abstrair uma goroutine e retornamos um canal
 	canal := make(chan string)
 
 	go func() {
